@@ -1,0 +1,11 @@
+employee_id,name,age,department,city,salary,join_date,experience_years
+101,Keerthi,33,IT,Bangalore,85000,2020-05-12,5
+102,Rahul,29,Finance,Delhi,62000,2021-02-18,3
+103,Asha,41,HR,Chennai,73000,2016-11-05,10
+104,Manoj,36,IT,Hyderabad,90000,2018-07-23,7
+105,Divya,28,Marketing,Bangalore,55000,2022-01-10,2
+106,Sanjay,32,Finance,Delhi,64000,2019-09-14,4
+107,Meera,45,HR,Chennai,78000,2011-03-21,14
+108,Vinay,30,Marketing,Bangalore,58000,2020-10-02,4
+109,Arjun,38,IT,Hyderabad,95000,2017-06-13,9
+110,Pooja,26,Finance,Delhi,50000,2023-03-05,1
