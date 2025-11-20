@@ -12,12 +12,85 @@ Image generation: Tools like DALL·E or Midjourney.
 Audio & music: AI that composes songs or generates voices.
 Code generation: AI that writes or optimizes programming code.
 
+Types of Generative Models 
+LLM
+Vision Models
+Audio and Speech models
+Multi models
+Agentic AI systems
+
 How It Works
 Generative AI models typically use techniques like:
+
+Java developers : Code generations, Code refactoring, API development using GenAI, GenAI in springboot application, AI based unit test generation. 
+ETL developers: Data cleaning automation, Intelligent data classification, PII detection, Query generation(SQL/Big Query/Sqnoflake), Metadata enrichment, Automated documentation.
 
 Generative Adversarial Networks (GANs): Two neural networks (generator and discriminator) compete to create realistic outputs.
 Variational Autoencoders (VAEs): Encode and decode data to generate variations.
 Transformers: Predict next tokens in sequences, enabling coherent text or structured outputs.
+
+Evolution from ML → DL → Transformers → GenAI
+
+ML Era: Algorithms like decision trees, SVMs, and regression dominated. Focus was on prediction and classification.
+DL Era: Neural networks became deeper (CNNs for vision, RNNs for sequences). Enabled breakthroughs in speech and image recognition.
+Transformer Era (2017 onward): Introduced by Attention Is All You Need. Transformers revolutionized NLP by enabling large-scale language models (e.g., GPT, BERT).
+Generative AI Era: Leveraging transformers and diffusion models for creative tasks—text generation (ChatGPT), image generation (DALL·E), video, and multimodal AI.
+
+What are tokens?
+
+Tokens are the basic units of text that a model processes. They can be words, subwords, or even characters depending on the tokenizer.
+Example:
+
+Sentence: “Generative AI is amazing.”
+Tokens: ["Gener", "ative", " AI", " is", " amazing", "."] (subword tokens)
+
+
+
+
+
+Why tokens matter?
+
+Models don’t understand raw text; they understand numerical representations of tokens.
+Tokenization breaks text into manageable pieces for the model.
+
+
+
+Token Limit
+
+Every model has a context window (e.g., GPT-4 has ~128k tokens). This limits how much text it can process at once.
+
+
+Embeddings
+
+
+What are embeddings?
+
+Embeddings are vector representations of tokens in a high-dimensional space.
+Each token is mapped to a numeric vector (e.g., 768 or 1024 dimensions) that captures semantic meaning.
+
+
+
+Why embeddings matter?
+
+They allow the model to understand relationships between words.
+Similar words have embeddings that are close in this vector space.
+Example: “king” and “queen” will have embeddings that are closer than “king” and “car”.
+
+
+
+How they are used in GenAI?
+
+Input tokens >>> converted to embeddings >>> processed by transformer layers >>> output embeddings >>> decoded back into text.
+
+
+
+
+Workflow in GenAI
+
+Text Input >>> Tokenization >>> Tokens
+Tokens >>> Embeddings (vectors)
+Transformer layers process embeddings using attention
+Generate new embeddings >>> Convert back to tokens >>> Output text
 
 
 
