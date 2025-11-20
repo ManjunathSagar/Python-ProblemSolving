@@ -1,0 +1,24 @@
+Generative AI refers to a class of artificial intelligence systems that can create new content—such as text, images, audio, video, or even code—based on patterns learned from existing data. Unlike traditional AI, which focuses on analyzing or predicting, generative AI is about producing original outputs that resemble human-created content.
+Key Characteristics
+
+Uses machine learning models (often deep learning) to learn patterns from large datasets.
+Generates new data rather than just classifying or predicting.
+Often powered by transformer-based architectures like GPT (for text) or diffusion models (for images).
+
+Examples
+
+Text generation: Chatbots, content creation tools (e.g., GPT models).
+Image generation: Tools like DALL·E or Midjourney.
+Audio & music: AI that composes songs or generates voices.
+Code generation: AI that writes or optimizes programming code.
+
+How It Works
+Generative AI models typically use techniques like:
+
+Generative Adversarial Networks (GANs): Two neural networks (generator and discriminator) compete to create realistic outputs.
+Variational Autoencoders (VAEs): Encode and decode data to generate variations.
+Transformers: Predict next tokens in sequences, enabling coherent text or structured outputs.
+
+
+
+
