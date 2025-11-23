@@ -60,30 +60,27 @@ Token Limit
 Every model has a context window (e.g., GPT-4 has ~128k tokens). This limits how much text it can process at once.
 
 
-Embeddings
+What Are Embeddings? 
+Embeddings are numerical representations of text (or images, audio, code) that capture their meaning.
+Embeddings turn words/sentences/documents into numbers so that a machine can understand similarity and meaning.
 
+Why Do We Need Embeddings?
+Computers cannot understand text directly.
+They understand vectors (lists of numbers).
 
-What are embeddings?
+Input	Output
+"apple"	[0.12, -0.98, 0.45, ...]
 
-Embeddings are vector representations of tokens in a high-dimensional space.
-Each token is mapped to a numeric vector (e.g., 768 or 1024 dimensions) that captures semantic meaning.
-
-
-
-Why embeddings matter?
-
-They allow the model to understand relationships between words.
-Similar words have embeddings that are close in this vector space.
-Example: “king” and “queen” will have embeddings that are closer than “king” and “car”.
-
+Words/sentences with similar meaning will have vectors that are close to each other in space.
+"king" is close to "queen"
 
 
 How they are used in GenAI?
-
 Input tokens >>> converted to embeddings >>> processed by transformer layers >>> output embeddings >>> decoded back into text.
 
 
-
+What Is Attention in GenAI?
+Attention is a mechanism in transformer models that lets the model decide which words to focus on when understanding or generating text.
 
 Workflow in GenAI
 
@@ -93,5 +90,57 @@ Transformer layers process embeddings using attention
 Generate new embeddings >>> Convert back to tokens >>> Output text
 
 
+Temperature
+============
+Controls randomness in output.
+
+0.0 – 0.3 → deterministic, precise, factual
+0.5 – 0.7 → balanced, natural language
+0.8 – 1.2 → creative, more varied
+>1.2 → chaotic (rarely used)
+
+Use cases:
+==========
+0.1 → RAG, finance, medical, code generation
+0.7 → general conversation
+1.1 → story writing, brainstorming
+
+Top-k Sampling
+==============
+Limits choices to top-k most likely tokens.
+
+k = 1 → fully deterministic
+k = 10 → safe + controlled creativity
+k = 100 → very creative
+k > 200 → too random
+
+Idea: Model picks the next token only from the top-k most probable words.
 
 
+Top-p (Nucleus Sampling)
+
+Choose tokens whose cumulative probability ≤ p.
+
+p = 0.1 → highly focused
+p = 0.5 → balanced
+p = 0.9 → creative
+p = 1.0 → full distribution
+
+Top-p is smoother than top-k and often preferred.
+
+
+Suppose the model predicts the next word with these probabilities:
+
+Word	Probability
+eat	0.40
+go	0.30
+read	0.15
+walk	0.10
+car	0.05
+
+Now let’s see different top-p settings:
+We pick only the most probable words until their total probability ≥ 0.5:
+
+eat = 0.40
+go = 0.30 → now total = 0.70 (≥0.5)
+So the model only chooses between “eat” and “go.”
