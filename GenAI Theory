@@ -144,3 +144,54 @@ We pick only the most probable words until their total probability ≥ 0.5:
 eat = 0.40
 go = 0.30 → now total = 0.70 (≥0.5)
 So the model only chooses between “eat” and “go.”
+
+
+What is Prompting in GenAI?
+Prompting is the process of giving instructions to a Generative AI model (like ChatGPT, GPT-5, Claude, Gemini) so it produces the output you want.
+Prompting is the art and technique of giving precise instructions to a GenAI model so it produces the desired output
+
+WHY IS PROMPTING IMPORTANT?
+LLMs do not understand things like humans. They follow patterns based on:
+how the prompt is written
+what details it includes
+what constraints it gives
+
+Good prompting =
++ more accurate answers
++ less hallucination
++ better reasoning
++ more control
++ better code
++ better summaries
+
+Bad prompt:
+“Explain Python.”
+
+Good prompt:
+“Explain Python to a beginner in 5 bullet points with simple examples.”
+
+TYPES OF PROMPTS (Simple Overview)
+1. Zero-shot prompting
+No examples, just instructions.
+Example: “Summarize this.”
+
+2. One-shot prompting
+One example included.
+
+3. Few-shot prompting
+Multiple examples included.
+
+4. Chain-of-thought prompting
+Ask the model to “think step-by-step”.
+
+5. Role prompting
+Assign a persona:
+“You are a senior Python expert…”
+
+6. Structured prompting
+Force JSON, tables, specific formats.
+
+7. System + User prompting
+Used in APIs:
++ System = rules
++ User = request
