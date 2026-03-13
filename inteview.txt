@@ -22,3 +22,10 @@ Explain OOPS - Object Oriented Programming in python?
 What is inheritance in Python? Explain with example.
 What is the use of super function in inheritance? 
 Explain the types of python inheritance.
+
+
+
+Identify if the provided year is leap year. 
+Identify existance of substring in the main string. "AI is evolving very rapidly to make life easier. AI also has some downsides" (Repeatition of substring) (Find existance of substring) (Reverse the given main string) 
+Write code to find of the given string is Palindrome. 
+Write code to sort list of numbers (bubble sort, insertion sort, selection sort, merge sort, heap sort) - O(n) O(1)
