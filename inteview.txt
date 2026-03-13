@@ -1,1 +1,24 @@
-
+What kind of language is Python? Is it compiled language or interpreted language?
+How can you concatenate two list in python?
+How do you floor a number in python? or ciel? 
+Difference between // (divdend) / (division) % (mod) 
+What is the use of indentation in python?
+Can we pass a function as an argument in python? What are higher order functions? 
+What is the list comprehension? 
+What are *args and **kwargs? 
+What is break, continue asnd pass?
+What are some of the buildin data types in python? (int, float......)
+What is the difference between a mutable data type and immutable data type? 
+Explain loops in python.
+Write a script to initiate list as well as dictionary. (1,2) ["aaa","bbb"], {a: 1, b: 5}
+What is he version of python you used in your project? 
+Does python support mulitple data types in list? 
+What is docstring in python? """ sdsdsd """
+How exception handling is done in python?
+What is the difference between python arrays and lists? arr = array(...)
+What are modules and packages in python? 
+Explain python functions? 
+Explain OOPS - Object Oriented Programming in python?
+What is inheritance in Python? Explain with example.
+What is the use of super function in inheritance? 
+Explain the types of python inheritance.
